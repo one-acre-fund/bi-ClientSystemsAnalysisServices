@@ -1,0 +1,202 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ceddaebe-99f4-4395-8a28-4bdffbaf0b12" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Repayment Type</ID>
+  <Name>Repayment Type</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="02021824-af07-4e03-bf35-8f3e19e177c3">
+    <DataSourceViewID>TestRepayment</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="8a7ed1d9-820d-44f2-aec7-f4cdff30a8aa">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="0578d7a2-93d5-4ad6-bbc8-6215eaaf1139">
+      <ID>Repayment Type ID</ID>
+      <Name>Repayment Type ID</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>15</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5a5ef6c8-f2b4-4edb-b015-38c4ef913df5">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2e42530a-977e-4901-80ba-e7b4a6ec0b34">
+            <TableID>dbo_DimRepaymentType</TableID>
+            <ColumnID>RepaymentTypeID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="55210af1-06fa-4d13-b3e7-b051275c1acb">
+          <AttributeID>Repayment Type Name</AttributeID>
+          <Name>Repayment Type Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="484d3302-b772-461a-bf05-fa1df5b70e5a">
+          <AttributeID>Repayment Category ID</AttributeID>
+          <Name>Repayment Category ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="269243a0-9d9a-4024-b530-f033c96b0fb5">
+          <AttributeID>Repayment Category Name</AttributeID>
+          <Name>Repayment Category Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="36d7fea5-1be4-4fab-89e4-a19fb5e2731f">
+          <AttributeID>Revenue Category Name</AttributeID>
+          <Name>Revenue Category Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9d2d7b91-98d9-47fe-be9a-23a3cf2c0f8e">
+          <AttributeID>Revenue Category ID</AttributeID>
+          <Name>Revenue Category ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ad35939e-8f70-49c0-842e-83c693a6ae2b">
+          <AttributeID>Roster Repayment Type ID</AttributeID>
+          <Name>Roster Repayment Type ID</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7e9e50c2-d230-46f3-bcc2-4ac49794d824">
+      <ID>Repayment Type Name</ID>
+      <Name>Repayment Type Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f6fdbfb4-a3e9-492c-99ef-1daff929689e">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ae6ae907-e77e-4446-9b79-700f5a837006">
+            <TableID>dbo_DimRepaymentType</TableID>
+            <ColumnID>RepaymentTypeName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8d7c4bef-6873-4cb8-bf26-df0ba41f15d7">
+      <ID>Repayment Category ID</ID>
+      <Name>Repayment Category ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1cc0c6e6-bb79-432e-b9cf-01967490983d">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="17145d0d-bc6d-4f96-8e9a-989be60acae7">
+            <TableID>dbo_DimRepaymentType</TableID>
+            <ColumnID>RepaymentCategoryID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="eed1eade-f596-4223-ba36-80b0625d696e">
+      <ID>Repayment Category Name</ID>
+      <Name>Repayment Category Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="be5ba76e-0f81-4632-99e0-b75c84026aaa">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bdf4a3d4-9056-4bc8-bc34-fddd2ca91d11">
+            <TableID>dbo_DimRepaymentType</TableID>
+            <ColumnID>RepaymentCategoryName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b8cd5081-37ba-4337-a90a-d231f23415ce">
+      <ID>Revenue Category Name</ID>
+      <Name>Revenue Category Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="99ca2b9e-df09-4c85-b970-e4ccff5d4c95">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="65760870-719f-442a-83d8-0427d46befa1">
+            <TableID>dbo_DimRepaymentType</TableID>
+            <ColumnID>RevenueCategoryName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9136d910-deaa-47e4-bf5b-6bc8366ad084">
+      <ID>Revenue Category ID</ID>
+      <Name>Revenue Category ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="236e1718-cfb8-4f33-9eff-54e82f340721">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9f64dba7-0e2b-43b7-87c6-6319bf90a6b1">
+            <TableID>dbo_DimRepaymentType</TableID>
+            <ColumnID>RevenueCategoryID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9c4db8fc-df6d-449c-8812-cb81b4d8e7eb">
+      <ID>Roster Repayment Type ID</ID>
+      <Name>Roster Repayment Type ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="201dd053-d711-430a-998d-2e0c03d4d944">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4d302a2e-9e4c-4e4e-a2c0-28c9bc361fb8">
+            <TableID>dbo_DimRepaymentType</TableID>
+            <ColumnID>RosterRepaymentTypeID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
